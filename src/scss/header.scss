@@ -1,0 +1,32 @@
+.header {
+	&__container {
+		padding: 30px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 120px;
+		border-bottom: 1px solid rgba($primaryColor, 0.5);
+	}
+
+	&__instagram-social {
+		max-width: 24px;
+		max-height: 24px;
+	}
+
+	&__logo {
+		max-width: 40px;
+		max-height: 40px;
+		svg {
+			fill: $primaryColor;
+		}
+	}
+
+	&__bugrer-wrapper {
+	}
+
+	&__burger {
+		max-width: 50px;
+		max-height: 21px;
+		stroke: $primaryColor;
+	}
+}

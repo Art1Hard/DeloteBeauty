@@ -1,0 +1,37 @@
+.nav {
+	ul {
+		display: flex;
+		column-gap: 80px;
+		a {
+			line-height: 130%;
+			position: relative;
+			color: $primaryColor;
+
+			&::after {
+				content: "";
+				width: 0;
+				position: absolute;
+				right: 0;
+				bottom: -2px;
+				z-index: 1;
+				height: 1px; /* Высота линии */
+				background-color: $primaryColor; /* Цвет подчеркивания при исчезании линии*/
+				transition: width 0.3s; /* Время эффекта */
+			}
+
+			&:hover::after {
+				width: 100%;
+				left: 0;
+			}
+		}
+
+		a.__active {
+			color: $accentColor;
+
+			&::after {
+				background-color: $accentColor;
+				width: 100%;
+			}
+		}
+	}
+}

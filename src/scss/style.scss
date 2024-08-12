@@ -1,0 +1,27 @@
+@import "reset";
+@import "fonts";
+@import "./vars";
+
+body {
+	font-family: "Cormorant Garamond", serif;
+	font-size: 18px;
+	color: $primaryColor;
+	background-color: black;
+}
+
+svg {
+	height: 100%;
+	width: 100%;
+	max-width: inherit;
+	max-height: inherit;
+}
+
+.container {
+	max-width: 1330px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+@import "./header";
+@import "./nav";
+@import "./home/intro";
