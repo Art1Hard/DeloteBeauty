@@ -6,6 +6,7 @@
 			line-height: 130%;
 			position: relative;
 			color: $primaryColor;
+			transition: color 0.2s ease-in-out;
 
 			&::after {
 				content: "";

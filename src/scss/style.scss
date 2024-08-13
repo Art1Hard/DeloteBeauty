@@ -26,6 +26,12 @@ body {
 	margin: 0 auto;
 }
 
+.title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 120%;
+}
+
 @import "./header";
 @import "./nav";
 @import "./home/intro";
@@ -33,3 +39,5 @@ body {
 @import "./home/selection";
 @import "./components/service";
 @import "./home/brend";
+@import "./home/project";
+@import "./footer";
