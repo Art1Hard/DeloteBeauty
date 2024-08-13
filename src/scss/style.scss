@@ -2,12 +2,21 @@
 @import "fonts";
 @import "./vars";
 
+html {
+	scrollbar-color: $accentColor $secondlyColor;
+}
+
 body {
 	font-family: "Cormorant Garamond", serif;
 	font-size: 18px;
 	color: $primaryColor;
 	background-color: $secondlyColor;
 	cursor: default;
+}
+
+::selection {
+	color: $primaryColor;
+	background-color: $accentColor;
 }
 
 .container {
