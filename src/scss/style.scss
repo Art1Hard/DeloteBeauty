@@ -4,6 +4,7 @@
 
 html {
 	scrollbar-color: $accentColor $secondlyColor;
+	scrollbar-width: thin;
 }
 
 body {
@@ -31,3 +32,4 @@ body {
 @import "./home/description";
 @import "./home/selection";
 @import "./components/service";
+@import "./home/brend";
