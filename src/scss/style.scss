@@ -7,13 +7,7 @@ body {
 	font-size: 18px;
 	color: $primaryColor;
 	background-color: $secondlyColor;
-}
-
-svg {
-	height: 100%;
-	width: 100%;
-	max-width: inherit;
-	max-height: inherit;
+	cursor: default;
 }
 
 .container {
@@ -26,3 +20,5 @@ svg {
 @import "./nav";
 @import "./home/intro";
 @import "./home/description";
+@import "./home/selection";
+@import "./components/service";

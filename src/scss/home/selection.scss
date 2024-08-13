@@ -1,0 +1,13 @@
+.selection {
+	&__container {
+		display: grid;
+		row-gap: 80px;
+		column-gap: 44px;
+
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		padding-right: 35px;
+	}
+
+	&__item {
+	}
+}
