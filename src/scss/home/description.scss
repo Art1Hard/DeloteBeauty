@@ -1,0 +1,23 @@
+.description {
+	&__container {
+		max-width: 856px;
+		width: 100%;
+		text-align: center;
+		font-size: 27px;
+		padding-top: 120px;
+		padding-bottom: 95px;
+	}
+	&__marks {
+		width: 80px;
+		height: 64px;
+		fill: $primaryColor;
+		margin-bottom: 60px;
+	}
+
+	p {
+		line-height: 130%;
+		&:first-of-type {
+			margin-bottom: 16px;
+		}
+	}
+}

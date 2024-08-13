@@ -6,7 +6,7 @@ body {
 	font-family: "Cormorant Garamond", serif;
 	font-size: 18px;
 	color: $primaryColor;
-	background-color: black;
+	background-color: $secondlyColor;
 }
 
 svg {
@@ -25,3 +25,4 @@ svg {
 @import "./header";
 @import "./nav";
 @import "./home/intro";
+@import "./home/description";
