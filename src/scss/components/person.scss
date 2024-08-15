@@ -1,0 +1,18 @@
+.person {
+	&__img {
+		max-width: 400px;
+		aspect-ratio: 0.84/1;
+		margin-bottom: 30px;
+	}
+
+	&__name {
+		margin-bottom: 10px;
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 130%;
+	}
+
+	&__job {
+		line-height: 130%;
+	}
+}
