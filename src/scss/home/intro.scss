@@ -1,10 +1,12 @@
 .intro {
+	position: relative;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("@img/intro/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	min-height: 1040px;
+	overflow-x: hidden;
 
 	&__container {
 		min-height: inherit;

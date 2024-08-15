@@ -1,0 +1,74 @@
+$containerPaddingWidth: 80px;
+$containerPaddingHeight: 40px;
+
+.menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	background-color: $secondlyColor;
+	border-left: 1px solid rgba($primaryColor, 0.5);
+	height: 100%;
+	transform: translateX(100%);
+	transition: transform 0.25s cubic-bezier(0.4, 0, 1, 1);
+
+	&__container {
+		position: relative;
+		padding: $containerPaddingHeight $containerPaddingWidth;
+		max-width: 315px + $containerPaddingWidth * 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: inherit;
+	}
+
+	&__close {
+		position: absolute;
+		top: $containerPaddingHeight - 5px;
+		left: $containerPaddingWidth - 5px;
+		z-index: 11;
+		height: 42px;
+		width: 42px;
+
+		span {
+			position: relative;
+			display: block;
+			height: inherit;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				z-index: 1;
+				height: 2px;
+				width: 100%;
+				background-color: $primaryColor;
+			}
+
+			&::before {
+				top: 50%;
+				left: 0;
+				rotate: -45deg;
+			}
+
+			&::after {
+				top: 50%;
+				left: 0;
+				rotate: 45deg;
+			}
+		}
+	}
+
+	&__text {
+		line-height: 130%;
+		margin-bottom: 80px;
+	}
+
+	&__contact {
+		margin-bottom: 60px;
+	}
+}
+
+.menu.__active {
+	transform: translateX(0);
+}

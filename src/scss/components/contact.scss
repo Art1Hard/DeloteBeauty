@@ -1,0 +1,25 @@
+.contact {
+	&__title {
+		margin-bottom: 25px;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 120%;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+		line-height: 130%;
+
+		a {
+			color: $primaryColor;
+			opacity: 0.8;
+			transition: opacity 0.2s ease-in-out;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

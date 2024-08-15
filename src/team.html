@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{ "title":"Главная" })
+
+<body>
+	<main>
+		<section class="team __drawer">
+			<div class="container">
+				@@include('html/header.html',{})
+
+				<h2 class="team__title">Наши мастера</h2>
+
+				<div class="team__grid">
+					<div class="team__person person">
+						<div class="person__img back-border">
+							<img src="@img/team/person1.jpg" alt="Мастер">
+						</div>
+						<h3 class="person__name">Елена Васильевна</h3>
+						<h4 class="person__job">Визажист</h4>
+					</div>
+
+					<div class="team__person person">
+						<div class="person__img back-border">
+							<img src="@img/team/person2.jpg" alt="Мастер">
+						</div>
+						<h3 class="person__name">Елена Васильевна</h3>
+						<h4 class="person__job">Визажист</h4>
+					</div>
+
+					<div class="team__person person">
+						<div class="person__img back-border">
+							<img src="@img/team/person1.jpg" alt="Мастер">
+						</div>
+						<h3 class="person__name">Елена Васильевна</h3>
+						<h4 class="person__job">Визажист</h4>
+					</div>
+
+					<div class="team__person person">
+						<div class="person__img back-border">
+							<img src="@img/team/person3.jpg" alt="Мастер">
+						</div>
+						<h3 class="person__name">Елена Васильевна</h3>
+						<h4 class="person__job">Визажист</h4>
+					</div>
+
+					<div class="team__person person">
+						<div class="person__img back-border">
+							<img src="@img/team/person4.jpg" alt="Мастер">
+						</div>
+						<h3 class="person__name">Елена Васильевна</h3>
+						<h4 class="person__job">Визажист</h4>
+					</div>
+
+					<div class="team__person person">
+						<div class="person__img back-border">
+							<img src="@img/team/person5.jpg" alt="Мастер">
+						</div>
+						<h3 class="person__name">Елена Васильевна</h3>
+						<h4 class="person__job">Визажист</h4>
+					</div>
+				</div>
+
+			</div>
+
+			@@include('html/components/menu.html',{})
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+</body>
+<script src="js/app.min.js"></script>
+
+</html>

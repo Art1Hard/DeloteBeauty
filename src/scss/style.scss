@@ -32,6 +32,15 @@ body {
 	line-height: 120%;
 }
 
+.back-border {
+	transform: translate(20px, -20px);
+	border: 1px solid rgba($accentColor, 0.5);
+
+	img {
+		transform: translate(-20px, 20px);
+	}
+}
+
 @import "./header";
 @import "./nav";
 @import "./home/intro";
@@ -41,3 +50,5 @@ body {
 @import "./home/brend";
 @import "./home/project";
 @import "./footer";
+@import "./components/contact";
+@import "./components/menu";
