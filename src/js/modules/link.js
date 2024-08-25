@@ -3,9 +3,9 @@ const teamLink = document.querySelector("#page-2");
 const priceLink = document.querySelector("#page-4");
 
 const initLink = () => {
-	setActiveLink("/", homeLink);
-	setActiveLink("/team.html", teamLink);
-	setActiveLink("/price.html", priceLink);
+	setActiveLink("/DeloteBeauty", homeLink);
+	setActiveLink("/DeloteBeauty/team.html", teamLink);
+	setActiveLink("/DeloteBeauty/price.html", priceLink);
 };
 
 const setActiveLink = (pathname, page) => {
