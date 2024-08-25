@@ -1,10 +1,15 @@
-const homePage = document.querySelector("#page-1");
-const teamPage = document.querySelector("#page-2");
+const homeLink = document.querySelector("#page-1");
+const teamLink = document.querySelector("#page-2");
+const priceLink = document.querySelector("#page-4");
 
 const initLink = () => {
-	if (window.location.pathname === "/") homePage.classList.add("__active");
-	if (window.location.pathname === "/team.html")
-		teamPage.classList.add("__active");
+	setActiveLink("/", homeLink);
+	setActiveLink("/team.html", teamLink);
+	setActiveLink("/price.html", priceLink);
+};
+
+const setActiveLink = (pathname, page) => {
+	if (window.location.pathname === pathname) page.classList.add("__active");
 };
 
 export default initLink;
